@@ -1,0 +1,30 @@
+{
+  "name": "rikudou/scalar-objects",
+  "type": "library",
+  "description": "Handlers for using scalar types as objects",
+  "homepage": "https://github.com/RikudouSage/scalar-objects",
+  "keywords": ["scalar","objects"],
+  "license": "WTFPL",
+  "authors": [
+    {
+      "name": "Dominik Chrástecký",
+      "email": "dominik@chrastecky.cz"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "ext-scalar_objects": ">=0.2"
+  },
+  "autoload": {
+    "classmap": [
+      "Scalar/Handlers/ScalarHandler.php",
+      "Scalar/Handlers/StringHandler.php",
+      "Scalar/Handlers/NumberHandler.php",
+      "Scalar/Handlers/IntHandler.php",
+      "Scalar/Handlers/FloatHandler.php"
+    ],
+    "files": [
+      "Scalar/RegisterHandlers.php"
+    ]
+  }
+}
