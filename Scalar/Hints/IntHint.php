@@ -5,12 +5,12 @@ namespace Scalar\Hints;
 class IntHint extends NumberHint {
 
   /**
-   * @return bool
+   * @return bool|BoolHint
    */
   public function even() {}
 
   /**
-   * @return bool
+   * @return bool|BoolHint
    */
   public function odd() {}
 

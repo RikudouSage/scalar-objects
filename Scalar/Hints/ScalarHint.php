@@ -9,7 +9,7 @@ abstract class ScalarHint {
 	public function toString() {}
 
 	/**
-	 * @return bool
+	 * @return bool|BoolHint
 	 */
 	public function toBool() {}
 
@@ -24,42 +24,42 @@ abstract class ScalarHint {
 	public function toInt() {}
 
 	/**
-	 * @return bool
+	 * @return bool|BoolHint
 	 */
 	public function isString() {}
 
 	/**
-	 * @return bool
+	 * @return bool|BoolHint
 	 */
 	public function isBool() {}
 
 	/**
-	 * @return bool
+	 * @return bool|BoolHint
 	 */
 	public function isFloat() {}
 
 	/**
-	 * @return bool
+	 * @return bool|BoolHint
 	 */
 	public function isInt() {}
 
 	/**
-	 * @return bool
+	 * @return bool|BoolHint
 	 */
 	public function isArray() {}
 
   /**
-   * @return bool
+   * @return bool|BoolHint
    */
 	public function isNull() {}
 
   /**
-   * @return bool
+   * @return bool|BoolHint
    */
 	public function isNumeric() {}
 
   /**
-   * @return bool
+   * @return bool|BoolHint
    */
 	public function isNumber() {}
 }

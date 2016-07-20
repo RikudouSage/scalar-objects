@@ -13,7 +13,7 @@ class StringHint extends ScalarHint {
 	/**
 	 * @param int|IntHint $algo
 	 * @param array $options
-	 * @return bool|string|StringHint
+	 * @return bool|BoolHint|string|StringHint
 	 */
 	public function password($algo = PASSWORD_DEFAULT, $options = []) {}
 
@@ -89,19 +89,19 @@ class StringHint extends ScalarHint {
 
 	/**
 	 * @param string|StringHint $string
-	 * @return bool
+	 * @return bool|BoolHint
 	 */
 	public function contains($string) {}
 
 	/**
 	 * @param string|StringHint $string
-	 * @return bool
+	 * @return bool|BoolHint
 	 */
 	public function startsWith($string) {}
 
 	/**
 	 * @param string|StringHint $string
-	 * @return bool
+	 * @return bool|BoolHint
 	 */
 	public function endsWith($string) {}
 

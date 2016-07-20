@@ -17,7 +17,7 @@ abstract class NumberHint extends ScalarHint {
 
   /**
    * @param int|float|IntHint|FloatHint $number
-   * @return bool
+   * @return bool|BoolHint
    */
   public function equals($number) {}
 
