@@ -7,6 +7,8 @@ When you install from composer, it's just enough to include `vendor/autoload.php
 When you install from github, you must include all files from `Scalar/Handlers` and possibly `Scalar/RegisterHandlers.php`.
 The directory `Scalar/Hints` doesn't need to be included, it's just for IDE completion.
 
+You can install via composer using `composer require rikudou/scalar-objects`.
+
 ## Example
 ```php
 <?php
