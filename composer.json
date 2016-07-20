@@ -21,7 +21,8 @@
       "Scalar/Handlers/StringHandler.php",
       "Scalar/Handlers/NumberHandler.php",
       "Scalar/Handlers/IntHandler.php",
-      "Scalar/Handlers/FloatHandler.php"
+      "Scalar/Handlers/FloatHandler.php",
+      "Scalar/Handlers/BoolHandler.php"
     ],
     "files": [
       "Scalar/RegisterHandlers.php"
