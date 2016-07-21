@@ -91,4 +91,11 @@ abstract class ScalarHandler {
   public static function isNumber() {
     return false;
   }
+
+  /**
+   * @return bool
+   */
+  public static function isResource() {
+    return false;
+  }
 }

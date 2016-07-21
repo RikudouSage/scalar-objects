@@ -41,7 +41,7 @@ class StringHint extends ScalarHint {
 
 	/**
 	 * @param int|IntHint $start
-	 * @param null|int|IntHint $length
+	 * @param null|int|IntHint|NullHint $length
 	 * @return string|StringHint
 	 */
 	public function cut($start, $length = NULL) {}

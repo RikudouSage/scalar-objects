@@ -22,7 +22,9 @@
       "Scalar/Handlers/NumberHandler.php",
       "Scalar/Handlers/IntHandler.php",
       "Scalar/Handlers/FloatHandler.php",
-      "Scalar/Handlers/BoolHandler.php"
+      "Scalar/Handlers/BoolHandler.php",
+      "Scalar/Handlers/NullHandler.php",
+      "Scalar/Handlers/ResourceHandler.php"
     ],
     "files": [
       "Scalar/RegisterHandlers.php"

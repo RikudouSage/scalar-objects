@@ -62,4 +62,9 @@ abstract class ScalarHint {
    * @return bool|BoolHint
    */
 	public function isNumber() {}
+
+  /**
+   * @return bool|BoolHint
+   */
+	public function isResource() {}
 }
