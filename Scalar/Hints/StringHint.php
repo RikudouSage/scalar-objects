@@ -175,4 +175,14 @@ class StringHint extends ScalarHint {
 	 */
 	public function padRight($pad_length, $pad_string = " ") {}
 
+  /**
+   * @return StringHint|string
+   */
+	public function lowerFirst() {}
+
+  /**
+   * @return StringHint|string
+   */
+	public function upperFirst() {}
+
 }

@@ -272,4 +272,21 @@ class StringHandler extends ScalarHandler {
 		return self::pad($self, $pad_length, $pad_string, STR_PAD_RIGHT);
 	}
 
+  /**
+   * @param string $self
+   * @return string
+   */
+	public static function lowerFirst($self) {
+	  return lcfirst($self);
+  }
+
+  /**
+   * @param string $self
+   * @return string
+   */
+  public static function upperFirst($self) {
+    return ucfirst($self);
+  }
+
+
 }
