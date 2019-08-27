@@ -166,7 +166,8 @@ try {
                         $parameterConfig['type'][] = 'null';
                     }
                 } else {
-                    $parameterConfig['types'] = explode('|', getPhpdocType($method->getDocComment(), $parameter->getName()));
+                    $parameterConfig['types'] = explode('|',
+                        getPhpdocType($method->getDocComment(), $parameter->getName()));
                 }
 
                 $parameterConfig['types'] = implode('|', getNormalizedTypehints($parameterConfig['types']));
@@ -253,6 +254,23 @@ try {
         file_put_contents($config['file'], str_replace("\t", '    ', implode("\n", $fileContent)));
     }
 
+    $autoloaderFile = __DIR__ . "/ide/autoloader.php";
+
+    $autoloaderContent = [
+        '<?php',
+        '',
+        '// this file is not automatically used, use it only if you need to load the typehints',
+    ];
+
+    $files = glob(__DIR__ . "/ide/TypeHints/*.php");
+    foreach ($files as $file) {
+        $basename = pathinfo($file, PATHINFO_BASENAME);
+        $autoloaderContent[] = "require_once __DIR__.'/TypeHints/{$basename}';";
+    }
+    file_put_contents($autoloaderFile, implode("\n", $autoloaderContent));
+
+    echo "All typehint files were successfully created", PHP_EOL;
+    exit(0);
 } catch (Exception $exception) {
     echo $exception->getMessage(), PHP_EOL;
     exit(1);
