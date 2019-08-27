@@ -1,2 +1,4 @@
 /.idea
-*test*
+/composer.lock
+/vendor
+/.php_cs.cache
